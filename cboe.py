@@ -1,4 +1,4 @@
-"""CBOE Options Dashboard"""
+"""Dashboard de opciones f/CBOE"""
 __docformat__ = "numpy"
 
 import pandas as pd
@@ -19,13 +19,13 @@ CBOE_INDEXES: DataFrame = cboe.get_cboe_index_directory()
 
     # Start of Dashboard Section
 st.set_page_config(
-    page_title = 'Options Analysis Dashboard',
+    page_title = 'Dashboard de opciones',
     layout = 'wide',
     menu_items={
         "Get help":"https://discord.com/invite/Y4HDyB6Ypu",
         },
     )
-st.title('CBOE Options Dashboard')
+st.title('Dashboard de opciones')
 
 col_1,col_2,col_3,col_4,col_5,col_6,col_7,col_8,col_9,col_10 = st.columns([0.20,0.33,0.20,0.20,0.20,0.20,0.20,0.20,0.20,1])
 with col_1:
